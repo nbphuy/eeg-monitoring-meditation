@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { WSMessage, EEGData } from '@/types'
 
 class WebSocketService {
@@ -110,3 +111,16 @@ class WebSocketService {
 }
 
 export const wsService = new WebSocketService()
+=======
+export function connectEEG(onFrame: (f:any)=>void) {
+    const ws = new WebSocket("ws://localhost:8000/ws/eeg");
+    ws.binaryType = "arraybuffer";
+    ws.onmessage = (ev) => {
+        try {
+            const text = typeof ev.data === "string" ? ev.data : new TextDecoder().decode(ev.data);
+            onFrame(JSON.parse(text));
+        } catch {}
+    };
+    return ws;
+}
+>>>>>>> origin/main

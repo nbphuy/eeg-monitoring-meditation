@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { Dashboard } from './pages/Dashboard'
@@ -21,3 +22,11 @@ function App() {
 }
 
 export default App
+=======
+import './App.css'
+import LiveSession from './pages/LiveSession';
+
+export default function App() {
+    return <LiveSession/>;
+}
+>>>>>>> origin/main

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
 websockets==12.0
@@ -40,3 +41,22 @@ mypy==1.7.1
 aiofiles==23.2.1
 pyserial==3.5  # For serial port communication with EEG devices
 pylsl==1.16.2  # Lab Streaming Layer for real-time data streaming
+=======
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+pydantic-settings==2.5.2
+numpy==2.1.1
+scipy==1.14.1
+mne==1.8.0
+websockets==13.0
+orjson==3.10.7
+python-dotenv==1.0.1
+# time-series (tuỳ chọn Thesis): influxdb-client==1.45.0
+# ORM (nếu cần SQLite/Postgres): SQLAlchemy==2.0.35
+# test & quality
+pytest==8.3.2
+httpx==0.27.2
+ruff==0.6.4
+black==24.8.0
+>>>>>>> origin/main

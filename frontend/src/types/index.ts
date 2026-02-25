@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export interface Session {
   id: number
   user_id: string
@@ -32,3 +33,14 @@ export interface WSMessage {
 }
 
 export type MeditationState = 'relaxed' | 'focused' | 'deep_meditation' | 'distracted' | 'transitional'
+=======
+export type EEGFrame = {
+    timestamp: number;
+    fs: number;
+    n_channels: number;
+    samples: number;
+    data: number[][]; // [ch][sample]
+    bands: { alpha: number; beta: number; theta: number; [k: string]: number };
+    meditation_index: number;
+};
+>>>>>>> origin/main
